@@ -1,0 +1,15 @@
+// NodeMCU ESP8266 LED Blink
+
+#define LED_BUILTIN_PIN LED_BUILTIN  // Built-in LED (GPIO2) D4
+
+void setup() {
+  pinMode(LED_BUILTIN_PIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN_PIN, LOW);   // Turn LED ON
+  delay(1000);                          // Wait 1 second
+
+  digitalWrite(LED_BUILTIN_PIN, HIGH);  // Turn LED OFF
+  delay(1000);                          // Wait 1 second
+}
