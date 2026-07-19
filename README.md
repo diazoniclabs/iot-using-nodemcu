@@ -26,10 +26,4 @@ To install libraries:
 4. Connect the NodeMCU, select the correct **Port**, and upload the sketch.
 
 
-Libraries used:
-
-1. DHT11 
-2. Thingspeak - 
-3. Adafruit_MQTT
-
-Adafruit Unified Sensor Library
+Note : This Adafruit Unified Sensor Library has to used if prompted
