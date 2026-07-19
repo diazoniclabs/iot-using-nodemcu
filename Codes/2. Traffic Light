@@ -1,0 +1,31 @@
+// Optimized Traffic Light for NodeMCU ESP8266
+
+const int RED_LED    = D5;
+const int YELLOW_LED = D6;
+const int GREEN_LED  = D7;
+
+void setLights(bool red, bool yellow, bool green) {
+  digitalWrite(RED_LED, red);
+  digitalWrite(YELLOW_LED, yellow);
+  digitalWrite(GREEN_LED, green);
+}
+
+void setup() {
+  pinMode(RED_LED, OUTPUT);
+  pinMode(YELLOW_LED, OUTPUT);
+  pinMode(GREEN_LED, OUTPUT);
+}
+
+void loop() {
+  setLights(HIGH, LOW, LOW);   // Red
+  delay(5000);
+
+  setLights(LOW, HIGH, LOW);   // Yellow
+  delay(2000);
+
+  setLights(LOW, LOW, HIGH);   // Green
+  delay(5000);
+
+  setLights(LOW, HIGH, LOW);   // Yellow
+  delay(2000);
+}
