@@ -2,8 +2,17 @@
 
 1. All programs were written using **Arduino IDE 2.3.10**. You can download it from the official Arduino website: [Arduino IDE](https://www.arduino.cc/en/software/).
 
-2. Open **File → Preferences**.
-3. Add the ESP8266 Boards URL:
+2.Install the driver for NodeMCU(1.0). 
+
+Link for driver (CP2102) - https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip 
+Unzip the file. Right click on silabser.inf and select install. 
+
+Check on Device Manager. You should get something like this.
+
+<img width="783" height="566" alt="image" src="https://github.com/user-attachments/assets/ad9ff814-6c20-4360-835e-4263e55942ef" />
+
+
+3. Open **File → Preferences**. Add the ESP8266 Boards URL:
 
    ```
    https://arduino.esp8266.com/stable/package_esp8266com_index.json
